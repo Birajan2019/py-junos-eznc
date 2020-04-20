@@ -1,0 +1,268 @@
+I am having some issues trying to install the pyez module. Below is the error I am seeing: If someone could help, I would very much appreciate.
+
+
+C:\Users\firstname.lastname>python
+Python 3.8.2 (tags/v3.8.2:7b3ab59, Feb 25 2020, 23:03:10) [MSC v.1916 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+
+>>> from jnpr.junos import Device
+Traceback (most recent call last):
+  File "C:\Users\firstname.lastname\AppData\Local\Programs\Python\Python38\lib\site-packages\ntc_templates\parse.py", line 5, in <module>
+    from textfsm import clitable
+  File "C:\Users\firstname.lastname\AppData\Local\Programs\Python\Python38\lib\site-packages\textfsm\clitable.py", line 41, in <module>
+    from textfsm import texttable
+  File "C:\Users\firstname.lastname\AppData\Local\Programs\Python\Python38\lib\site-packages\textfsm\texttable.py", line 42, in <module>
+    from textfsm import terminal
+  File "C:\Users\firstname.lastname\AppData\Local\Programs\Python\Python38\lib\site-packages\textfsm\terminal.py", line 25, in <module>
+    import fcntl
+ModuleNotFoundError: No module named 'fcntl'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "C:\Users\firstname.lastname\AppData\Local\Programs\Python\Python38\lib\site-packages\jnpr\junos\__init__.py", line 3, in <module>
+    from jnpr.junos.factory.to_json import PyEzJSONEncoder
+  File "C:\Users\firstname.lastname\AppData\Local\Programs\Python\Python38\lib\site-packages\jnpr\junos\factory\__init__.py", line 4, in <module>
+    from jnpr.junos.factory.factory_loader import FactoryLoader
+  File "C:\Users\firstname.lastname\AppData\Local\Programs\Python\Python38\lib\site-packages\jnpr\junos\factory\factory_loader.py", line 14, in <module>
+    from jnpr.junos.factory.factory_cls import *
+  File "C:\Users\firstname.lastname\AppData\Local\Programs\Python\Python38\lib\site-packages\jnpr\junos\factory\factory_cls.py", line 7, in <module>
+    from jnpr.junos.factory.cmdtable import CMDTable
+  File "C:\Users\firstname.lastname\AppData\Local\Programs\Python\Python38\lib\site-packages\jnpr\junos\factory\cmdtable.py", line 18, in <module>
+    from ntc_templates import parse as ntc_parse
+  File "C:\Users\firstname.lastname\AppData\Local\Programs\Python\Python38\lib\site-packages\ntc_templates\parse.py", line 7, in <module>
+    import clitable
+ModuleNotFoundError: No module named 'clitable'
+>>>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
